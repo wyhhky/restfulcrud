@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.atguigu</groupId>
-	<artifactId>spring-boot-04-web-restfulcrud</artifactId>
+	<artifactId>restfulcrud</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>restfulcrud</name>
 	<description>Demo project for Spring Boot</description>
