@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>成功！</h1>
+    <!-- th:text为thymeleaf语法，可以取到前面比如controller设置的值，比如map中的hellov变量的值
+         th:utext 解析html显示相应的效果，比如里面的<h1></h1>会处理成HEAD1格式
+    -->
+    <div id="div01" th:id="${hellov}" th:utext="${hellov}"></div>
+    <div th:text="${hellov}"></div>
+    <div th:utext="${hellov}"></div>
+
+    <hr/>
+    <!-- th:each每次遍历都会生成这个标签 ... users 有3个值，所以这里会有3个h4 -->
+    <h4 th:text="${user}" th:each="user:${users}"></h4>
+    <hr/>
+    <h4>
+        <span th:each="user:${users}"> [[${user}]] </span>
+    </h4>
+
+    </body>
+    </html>
